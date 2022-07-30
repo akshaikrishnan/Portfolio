@@ -95,6 +95,7 @@
       years: yearAge,
       months: monthAge,
       days: dateAge,
+      ageString: "",
     };
 
     if (age.years > 1) yearString = " years";
@@ -105,7 +106,7 @@
     else dayString = " day";
 
     if (age.years > 0 && age.months > 0 && age.days > 0)
-      ageString =
+      age.ageString =
         age.years +
         yearString +
         ", " +
@@ -115,26 +116,31 @@
         age.days +
         dayString;
     else if (age.years == 0 && age.months == 0 && age.days > 0)
-      ageString = "Only " + age.days + dayString + " old!";
+      age.ageString = "Only " + age.days + dayString;
     else if (age.years > 0 && age.months == 0 && age.days == 0)
-      ageString = age.years + yearString + " old. Happy Birthday!!";
+      age.ageString = age.years + yearString;
     else if (age.years > 0 && age.months > 0 && age.days == 0)
-      ageString =
-        age.years + yearString + " and " + age.months + monthString + " old.";
+      age.ageString =
+        age.years + yearString + " and " + age.months + monthString;
     else if (age.years == 0 && age.months > 0 && age.days > 0)
-      ageString =
-        age.months + monthString + " and " + age.days + dayString + " old.";
+      age.ageString = age.months + monthString + " and " + age.days + dayString;
     else if (age.years > 0 && age.months == 0 && age.days > 0)
-      ageString =
-        age.years + yearString + " and " + age.days + dayString + " old.";
+      age.ageString = age.years + yearString + " and " + age.days + dayString;
     else if (age.years == 0 && age.months > 0 && age.days == 0)
-      ageString = age.months + monthString + " old.";
-    else ageString = "Oops! Could not calculate age!";
+      age.ageString = age.months + monthString + " old.";
+    else age.ageString = "Oops! Could not calculate age!";
 
-    return ageString;
+    // return ageString;
+    console.log(age);
+    return age;
   }
   $(window).on("load", function () {
-    $("#years").html(getAge("07/06/2017"));
+    var experience = {};
+    this.experience = getAge("06/07/2017,9:00 PM");
+    $("#years").html(this.experience.ageString);
+    $("#bigyear").html(this.experience.years);
+    $("#bigmonth").html(this.experience.months);
+    $("#bigday").html(this.experience.days);
   });
 
   function preloader() {
