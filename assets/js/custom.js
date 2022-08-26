@@ -237,7 +237,7 @@
         // POST values in the background the the script URL
         $.ajax({
           type: "POST",
-          url: "contact.php",
+          url: "https://api.web3forms.com/submit",
           data: $(this).serialize(),
           success: function (data) {
             // data = JSON object that contact.php returns

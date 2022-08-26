@@ -25,12 +25,11 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript>
-      <link
+    <noscript
+      ><link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet"
-      />
-    </noscript>
+    /></noscript>
 
     <link
       rel="shortcut icon"
@@ -263,374 +262,248 @@
     <main class="main-root">
       <div id="dsn-scrollbar">
         <div class="main-content">
-          <!-- ========== Header Normal ========== -->
-          <header
-            class="header-page over-hidden p-relative header-padding-top header-padding-bottom border-bottom dsn-header-animation"
-          >
-            <div class="bg-circle-dotted"></div>
-            <div class="container">
+          <div class="wrapper">
+            <!-- ========== Slider Parallax ========== -->
+            <div
+              class="main-slider has-horizontal full-width p-relative w-100 h-100-v"
+            >
               <div
-                class="content-hero p-relative d-flex flex-column h-100 dsn-hero-parallax-title"
+                class="content-slider p-relative w-100 h-100 over-hidden v-dark"
               >
                 <div
-                  class="metas metas-blog d-flex align-items-center letter-s1 fz-16 p-relative"
+                  class="bg-container dsn-hero-parallax-img p-relative w-100 h-100"
                 >
-                  <p class="post-categories d-inline-block">
-                    <span class="cat-links"
-                      ><a id="category" href="#">Uncategorized</a></span
-                    >
-                  </p>
-
-                  <a id="date" href="#" class="effect-ajax">May 1, 2020</a>
+                  <div
+                    class="slide-inner dsn-webgl h-100"
+                    data-overlay="5"
+                    data-dsn-displacement="assets/img/displacement/8.jpg"
+                    data-dsn-intensity="-2"
+                    data-dsn-speedIn="1.2"
+                    data-dsn-easing="Expo.easeInOut"
+                    data-dsn-speedOut="1.2"
+                  ></div>
                 </div>
-                <h1
-                  id="postTitle"
-                  class="title mt-30 dsn-load-animate text-transform-upper max-w750"
-                >
-                  These cases are perfectly simple
-                </h1>
-              </div>
-            </div>
-          </header>
-          <!-- ========== End Header Normal ========== -->
 
-          <div class="wrapper">
-            <div class="root-blog">
-              <div class="container">
-                <div class="dsn-posts">
-                  <div class="image-head p-relative full-width">
+                <div
+                  class="dsn-slider-content p-absolute h-100 w-100 v-dark-head"
+                >
+                  <div class="dsn-container d-flex align-items-end">
                     <div
-                      class="before-z-index"
-                      data-dsn-grid="move-up"
+                      class="slide-content p-absolute dsn-active"
+                      data-webgel-src="assets/img/project/project1/1.jpg"
+                      data-overlay="6"
+                    >
+                      <div class="content p-relative">
+                        <div class="metas d-inline-block mb-20">
+                          <span>Product</span>
+                          <span>voice</span>
+                        </div>
+                        <div class="d-block"></div>
+                        <h1 class="title user-no-selection d-inline-block">
+                          <a
+                            href="project1.html"
+                            class="effect-ajax"
+                            data-dsn-ajax="slider"
+                            >Maybe speaker
+                          </a>
+                        </h1>
+                        <hr class="mt-20" />
+
+                        <p class="max-w570 mt-20 description">
+                          Vin tries to reflect Diesel’s vision and combines
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="slide-content p-absolute"
+                      data-webgel-src="assets/img/project/project2/1.jpg"
+                      data-overlay="6"
+                    >
+                      <div class="content p-relative">
+                        <div class="metas d-inline-block mb-20">
+                          <span>pen</span>
+                        </div>
+                        <div class="d-block"></div>
+                        <h1 class="title user-no-selection d-inline-block">
+                          <a
+                            href="project2.html"
+                            class="effect-ajax"
+                            data-dsn-ajax="slider"
+                            >Yaren collection
+                          </a>
+                        </h1>
+                        <hr class="mt-20" />
+
+                        <p class="max-w570 mt-20 description">
+                          symbols through which express themselves
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="slide-content p-absolute"
+                      data-webgel-src="assets/img/project/project3/1.jpg"
+                      data-overlay="6"
+                    >
+                      <div class="content p-relative">
+                        <div class="metas d-inline-block mb-20">
+                          <span>induction</span>
+                        </div>
+                        <div class="d-block"></div>
+                        <h1 class="title user-no-selection d-inline-block">
+                          <a
+                            href="project3.html"
+                            class="effect-ajax"
+                            data-dsn-ajax="slider"
+                            >Huggl Power Pack</a
+                          >
+                        </h1>
+                        <hr class="mt-20" />
+
+                        <p class="max-w570 mt-20 description">
+                          Huggl is an induction charging.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="slide-content p-absolute"
+                      data-webgel-src="assets/img/project/project4/1.jpg"
+                      data-overlay="2"
+                    >
+                      <div class="content p-relative">
+                        <div class="metas d-inline-block mb-20">
+                          <span>Architecture</span>
+                        </div>
+                        <div class="d-block"></div>
+                        <h1 class="title user-no-selection d-inline-block">
+                          <a
+                            href="project4.html"
+                            class="effect-ajax"
+                            data-dsn-ajax="slider"
+                            >Principal Garden</a
+                          >
+                        </h1>
+                        <hr class="mt-20" />
+
+                        <p class="max-w570 mt-20 description">
+                          Huggl is an induction charging.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="slide-content p-absolute"
+                      data-webgel-src="assets/img/project/project5/1.jpg"
                       data-overlay="5"
                     >
-                      <img
-                        id="cover"
-                        class="cover-bg-img has-bigger-scale"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-dsn-src="assets/img/about/5.jpg"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <div class="news-content mt-section">
-                    <div class="news-content-inner">
-                      <div class="post-content">
-                        <p>
-                          <a href="#">As a leading UX design agency,</a> we’re
-                          often asked by prospective clients and fellow
-                          designers similar questions: Disrupt is an experience
-                          to showcase the agency's approach to growing brands by
-                          building tech. Featured in an FWA Insights article,
-                          our team elaborates on the motivation behind the
-                          creation of this site.
-                        </p>
-
-                        <blockquote class="wp-block-quote">
-                          <p>
-                            <strong
-                              ><em
-                                >Vivamus sagittis lacus vel augue laoreet rutrum
-                                faucibus dolor auctor. Morbi leo risus, porta ac
-                                consectetur ac, vestibulum at eros.
-                                Curabitulandit Sed posuere consectetur est at
-                                lobortis. Donec id elit non mi porta gravida at
-                                eget metus.</em
-                              ></strong
-                            >
-                          </p>
-                        </blockquote>
-
-                        <p>
-                          <a href="#">As a leading UX design agency,</a> we’re
-                          often asked by prospective clients and fellow
-                          designers similar questions: Disrupt is an experience
-                          to showcase the agency's approach to growing brands by
-                          building tech. Featured in an FWA Insights article,
-                          our team elaborates on the motivation behind the
-                          creation of this site.
-                        </p>
-
-                        <img class="w-100" src="assets/img/blog/1.jpg" alt="" />
-
-                        <p>
-                          <a href="#">As a leading UX design agency,</a> we’re
-                          often asked by prospective clients and fellow
-                          designers similar questions: Disrupt is an experience
-                          to showcase the agency's approach to growing brands by
-                          building tech. Featured in an FWA Insights article,
-                          our team elaborates on the motivation behind the
-                          creation of this site.
-                        </p>
-
-                        <div class="post-tags p-relative">
-                          <a class="fz-16" href="#">
-                            <span class="post_tag post_tag">Blog</span>
-                          </a>
-                          <a class="fz-16" href="#">
-                            <span class="post_tag post_tag">Creative</span>
-                          </a>
+                      <div class="content p-relative">
+                        <div class="metas d-inline-block mb-20">
+                          <span>Photography</span> <span>car</span>
                         </div>
-
-                        <div
-                          class="pagination-post d-flex border-top border-bottom"
-                        >
-                          <div
-                            class="pagination-item text-uppercase border-right border-left w-100"
+                        <div class="d-block"></div>
+                        <h1 class="title user-no-selection d-inline-block">
+                          <a
+                            href="project5.html"
+                            class="effect-ajax"
+                            data-dsn-ajax="slider"
+                            >Small Silver Car</a
                           >
-                            <a href="#">PREVIOUS POST</a>
-                          </div>
+                        </h1>
+                        <hr class="mt-20" />
 
-                          <div class="icon">
-                            <a href="#">
-                              <i class="fas fa-th-large"></i>
-                            </a>
-                          </div>
-
-                          <div
-                            class="pagination-item text-right text-uppercase border-right border-left w-100"
-                          >
-                            <a href="#">NEXT POST</a>
-                          </div>
-                        </div>
+                        <p class="max-w570 mt-20 description">
+                          Huggl is an induction charging.
+                        </p>
                       </div>
                     </div>
 
-                    <div class="comments-post section-margin">
-                      <div class="comments-area section-margin">
-                        <div class="comments-title">
-                          <h4 class="title-block line-shap line-shap-before">
-                            <span class="line-bg-right">Comments</span>
-                          </h4>
+                    <div
+                      class="slide-content p-absolute"
+                      data-webgel-src="assets/img/project/project6/1.jpg"
+                      data-overlay="4"
+                    >
+                      <div class="content p-relative">
+                        <div class="metas d-inline-block mb-20">
+                          <span>Photography</span>
                         </div>
-
-                        <ol class="comment-list">
-                          <li class="comment">
-                            <div class="comment-body">
-                              <div class="comment-author">
-                                <img alt="" src="assets/img/team/1.jpg" />
-                              </div>
-                              <div class="comment-text">
-                                <div class="comment-info">
-                                  <h6 class="comment-name">Diana Torres</h6>
-                                </div>
-
-                                <div class="comment-date">January 23, 2019</div>
-                                <div class="text-holder">
-                                  <p>
-                                    Rassa id neque aliquam vestibulum morbi
-                                    blandit in fermentum et sollicitudin ac orci
-                                    phasellus egestas tellus velit ut tortor
-                                    pretium viverra suspendisse potenti nullam
-                                    ac tortor eu turpis egestas pretium.
-                                  </p>
-                                </div>
-                                <a class="comment-reply-link" href="#"
-                                  ><i class="fas fa-reply"></i> reply</a
-                                >
-                              </div>
-                            </div>
-
-                            <ul class="children">
-                              <li class="comment">
-                                <div class="comment-body">
-                                  <div class="comment-author">
-                                    <img alt="" src="assets/img/team/1.jpg" />
-                                  </div>
-                                  <div class="comment-text">
-                                    <div class="comment-info">
-                                      <h6 class="comment-name">Diana Torres</h6>
-                                    </div>
-                                    <div class="comment-date">
-                                      January 23, 2019
-                                    </div>
-
-                                    <div class="text-holder">
-                                      <p>
-                                        Rassa id neque aliquam vestibulum morbi
-                                        blandit in fermentum et sollicitudin ac
-                                        orci phasellus egestas tellus velit ut
-                                        tortor pretium viverra suspendisse
-                                        potenti nullam ac tortor eu turpis
-                                        egestas pretium.
-                                      </p>
-                                    </div>
-                                    <a class="comment-reply-link" href="#"
-                                      ><i class="fas fa-reply"></i> reply</a
-                                    >
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
-                          </li>
-
-                          <li class="comment">
-                            <div class="comment-body">
-                              <div class="comment-author">
-                                <img alt="" src="assets/img/team/1.jpg" />
-                              </div>
-                              <div class="comment-text">
-                                <div class="comment-info">
-                                  <h6 class="comment-name">Diana Torres</h6>
-                                </div>
-                                <div class="comment-date">January 23, 2019</div>
-
-                                <div class="text-holder">
-                                  <p>
-                                    Rassa id neque aliquam vestibulum morbi
-                                    blandit in fermentum et sollicitudin ac orci
-                                    phasellus egestas tellus velit ut tortor
-                                    pretium viverra suspendisse potenti nullam
-                                    ac tortor eu turpis egestas pretium.
-                                  </p>
-                                </div>
-                                <a class="comment-reply-link" href="#"
-                                  ><i class="fas fa-reply"></i> reply</a
-                                >
-                              </div>
-                            </div>
-                          </li>
-                        </ol>
-                      </div>
-
-                      <div class="comments-form">
-                        <div class="comments-title">
-                          <h4 class="title-block line-shap line-shap-before">
-                            <span class="line-bg-right">Comments</span>
-                          </h4>
-                        </div>
-
-                        <form class="d-grid grid-md-3 grid-sm-2">
-                          <div class="">
-                            <input
-                              type="text"
-                              name="name"
-                              placeholder="Enter your name ..."
-                              required="required"
-                              data-error="name is required."
-                            />
-                          </div>
-
-                          <div class="">
-                            <input
-                              type="email"
-                              name="email"
-                              placeholder="Enter your Email ..."
-                              required="required"
-                              data-error="Valid email is required."
-                            />
-                          </div>
-
-                          <div class="">
-                            <input
-                              type="text"
-                              name="url"
-                              placeholder="Enter your website ..."
-                            />
-                          </div>
-
-                          <div class="box-textarea">
-                            <textarea
-                              rows="6"
-                              class="form-control"
-                              name="message"
-                              placeholder="Tell us about you and the world"
-                              required="required"
-                              data-error="Your comment"
-                            ></textarea>
-                          </div>
-
-                          <div
-                            class="image-zoom w-auto d-inline-block"
-                            data-dsn="parallax"
+                        <div class="d-block"></div>
+                        <h1 class="title user-no-selection d-inline-block">
+                          <a
+                            href="project6.html"
+                            class="effect-ajax"
+                            data-dsn-ajax="slider"
+                            >Lengshuikeng</a
                           >
-                            <input
-                              name="submit"
-                              type="submit"
-                              id="submit"
-                              class="dsn-button-comment"
-                              value="Post Comment"
-                            />
-                          </div>
-                        </form>
+                        </h1>
+                        <hr class="mt-20" />
+
+                        <p class="max-w570 mt-20 description">
+                          Sometimes, we need to check the time,
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <footer class="footer p-relative background-section">
-            <div class="container">
-              <div class="footer-container">
-                <div class="d-flex align-items-center h-100">
-                  <div class="column-left">
-                    <div class="footer-social p-relative">
-                      <ul>
-                        <li class="over-hidden">
-                          <a
-                            href="#"
-                            data-dsn="parallax"
-                            target="_blank"
-                            rel="nofollow"
-                            >Dribbble.</a
-                          >
-                        </li>
-                        <li class="over-hidden">
-                          <a
-                            href="#"
-                            data-dsn="parallax"
-                            target="_blank"
-                            rel="nofollow"
-                            >Behance.</a
-                          >
-                        </li>
-                        <li class="over-hidden">
-                          <a
-                            href="#"
-                            data-dsn="parallax"
-                            target="_blank"
-                            rel="nofollow"
-                            >Linkedin.</a
-                          >
-                        </li>
-                        <li class="over-hidden">
-                          <a
-                            href="#"
-                            data-dsn="parallax"
-                            target="_blank"
-                            rel="nofollow"
-                            >Twitter.</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="scroll-top animation-rotate" data-dsn="parallax">
-                    <img src="assets/img/scroll_top.svg" alt="" />
-                    <i class="fa fa-angle-up"></i>
-                  </div>
-
-                  <div class="column-right">
-                    <h5>
-                      2021 © Made with <span class="love">♥</span>by
-                      <a
-                        class="link-hover"
-                        data-hover-text="Design Grid."
-                        target="_blank"
-                        rel="nofollow"
-                        href="https://themeforest.net/user/design_grid/portfolio/"
-                        >Design Grid.</a
+              <div
+                class="control-nav dsn-load-animate p-absolute w-100 d-flex justify-content-end dsn-container v-dark-head"
+              >
+                <div class="prev-container">
+                  <div class="container-inner">
+                    <div class="triangle"></div>
+                    <svg
+                      class="circle"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        class="circle-wrap"
+                        fill="none"
+                        stroke-width="1"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
                       >
-                    </h5>
+                        <circle cx="12" cy="12" r="10.5"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="slider-counter d-flex align-items-center">
+                  <span class="slider-current-index">01</span>
+                  <span class="slider-counter-delimiter"></span>
+                  <span class="slider-total-index">05</span>
+                </div>
+
+                <div class="next-container">
+                  <div class="container-inner">
+                    <div class="triangle"></div>
+                    <svg
+                      class="circle"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        class="circle-wrap"
+                        fill="none"
+                        stroke-width="1"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="10"
+                      >
+                        <circle cx="12" cy="12" r="10.5"></circle>
+                      </g>
+                    </svg>
                   </div>
                 </div>
               </div>
             </div>
-          </footer>
+            <!-- ========== End Slider Parallax ========== -->
+          </div>
         </div>
       </div>
 
@@ -974,11 +847,5 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/dsn-grid.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script type="module" src="assets/js/db.js" defer></script>
-    <script>
-      window.onload = function () {
-        fetchPost();
-      };
-    </script>
   </body>
 </html>
