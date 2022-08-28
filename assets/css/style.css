@@ -5931,3 +5931,13 @@ body.dsn-show-contact .contact-modal {
 .box-seat .pro-text {
   bottom: -120px;
 }
+.alert-success {
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid var(--border-color);
+  margin-bottom: 15px;
+}
+.close {
+  float: right;
+}

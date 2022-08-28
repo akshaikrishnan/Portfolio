@@ -511,7 +511,7 @@
       <div class="contact-btn">
         <div class="contact-btn-txt">Contact</div>
       </div>
-      <div class="contact-modal background-section">
+    <div class="contact-modal background-section">
         <div class="contact-container h-100 w-100 border-right">
           <div class="box-contact-inner section-padding">
             <div class="row align-items-center">
@@ -534,12 +534,17 @@
                   <form
                     id="contact-form"
                     class="form"
-                    method="post"
-                    action="contact.php"
+                    method="POST"
+                    action="https://api.web3forms.com/submit"
                     data-toggle="validator"
                   >
                     <div class="messages"></div>
                     <div class="input__wrap controls">
+                      <input
+                        type="hidden"
+                        name="access_key"
+                        value="00e5d4cc-1451-4d23-b79f-a748d8abd24f"
+                      />
                       <div class="form-group">
                         <div class="entry-box">
                           <label>Your name *</label>
@@ -577,9 +582,9 @@
                             id="form_message"
                             class="form-control"
                             name="message"
-                            placeholder="Tell us about you and the world"
+                            placeholder="Tell me about you and the world"
                             required="required"
-                            data-error="Please,leave us a message."
+                            data-error="Please,leave me a message."
                           ></textarea>
                         </div>
                         <div class="help-block with-errors"></div>
@@ -607,30 +612,31 @@
                   <ul>
                     <li>
                       <h5 class="title-block mb-15">Contact</h5>
-                      <p class="text-p">+1 (800) 990 8877</p>
+                      <p class="text-p">+91 (999) 580 5737</p>
                       <div class="over-hidden mt-5">
                         <a
                           class="link-hover"
-                          data-hover-text="info@example.com"
-                          href="#"
-                          >info@example.com</a
+                          data-hover-text="akshaiux@gmail.com"
+                          href="mailto:akshaiux@gmail.com"
+                          >akshaiux@gmail.com</a
                         >
                       </div>
                     </li>
                     <li>
                       <h5 class="title-block mb-15">Address</h5>
                       <p class="text-p">
-                        United Kingdom <br />
-                        33—35 Southernhay East
+                        14-I, Heera Cyberviews <br />
+                        Edachira PO, <br />
+                        Cochin, Kerala, India
                       </p>
                     </li>
                     <li>
-                      <h5 class="title-block mb-15">Follow</h5>
+                      <h5 class="title-block mb-15">Follow me on</h5>
                       <div class="social-item over-hidden">
                         <a
                           class="link-hover"
                           data-hover-text="Instagram."
-                          href="#"
+                          href="instagram.com/akshaicuts"
                           target="_blank"
                           rel="nofollow"
                           >Instagram.</a
@@ -639,8 +645,8 @@
                       <div class="social-item over-hidden">
                         <a
                           class="link-hover"
-                          data-hover-text="Facebook."
-                          href="#"
+                          data-hover-text="Dribbble."
+                          href="dribbble.com/akshaikrishnan"
                           target="_blank"
                           rel="nofollow"
                           >Facebook.</a
@@ -649,11 +655,11 @@
                       <div class="social-item over-hidden">
                         <a
                           class="link-hover"
-                          data-hover-text="YouTube."
-                          href="#"
+                          data-hover-text="Linkedin."
+                          href="https://www.linkedin.com/in/akshaikrishnan/"
                           target="_blank"
                           rel="nofollow"
-                          >YouTube.</a
+                          >Linkedin.</a
                         >
                       </div>
                     </li>

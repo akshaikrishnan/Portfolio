@@ -219,7 +219,14 @@
         });
     });
   }
-
+  function convertFormToJSON(form) {
+    return $(form)
+      .serializeArray()
+      .reduce(function (json, { name, value }) {
+        json[name] = value;
+        return json;
+      }, {});
+  }
   /**
    * Validation Contact form
    */
@@ -232,18 +239,33 @@
     // when the form is submitted
     contact_form.off("submit");
     contact_form.on("submit", function (e) {
+      const json = convertFormToJSON(contact_form);
       // if the validator does not prevent form submit
       if (!e.isDefaultPrevented()) {
+        console.log(json);
+        contact_form.find(".dsn-button").attr("value", "Please Wait..");
         // POST values in the background the the script URL
         $.ajax({
+          dataType: "json",
           type: "POST",
+          beforeSend: function (request) {
+            request.setRequestHeader(
+              "Content-Type",
+              "application/json",
+              "Accept",
+              "application/json"
+            );
+          },
           url: "https://api.web3forms.com/submit",
-          data: $(this).serialize(),
+          // data: $(this).serialize(),
+          // data: JSON.stringify(jQuery("#contact-form").serializeArray()),
+          data: JSON.stringify(json),
           success: function (data) {
+            console.log(data);
             // data = JSON object that contact.php returns
 
             // we recieve the type of the message: success x danger and apply it to the
-            var messageAlert = "alert-" + data.type;
+            var messageAlert = "alert-success";
             var messageText = data.message;
 
             // let's compose Bootstrap alert box HTML
@@ -259,6 +281,7 @@
               // inject the alert to .messages div in our form
               contact_form.find(".messages").html(alertBox);
               // empty the form
+              contact_form.find(".dsn-button").attr("value", "Send Message");
               contact_form[0].reset();
             }
             setTimeout(function () {
