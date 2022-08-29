@@ -170,4 +170,26 @@ async function createPost(data) {
   $("#category").text(data.category);
   $("#postTitle").text(data.title);
   $("#cover").attr({ "data-dsn-src": data.cover, src: data.cover });
+  metaGenerator(data.title, data.summary, data.cover);
+}
+
+//meta
+
+function metaGenerator(title, desc, img) {
+  var ogTitle = document.createElement("meta");
+  ogTitle.setAttribute("property", "og:title");
+  ogTitle.content = title;
+  var ogDesc = document.createElement("meta");
+  ogDesc.setAttribute("property", "og:description");
+  ogDesc.content = desc;
+  var ogImg = document.createElement("meta");
+  ogImg.setAttribute("property", "og:image");
+  ogImg.content = img;
+  document.getElementsByTagName("head")[0].appendChild(ogTitle);
+  document.getElementsByTagName("head")[0].appendChild(ogDesc);
+  document.getElementsByTagName("head")[0].appendChild(ogImg);
+  document.querySelector("title").textContent = title + " - Akshai Krishnan";
+  document
+    .querySelector('meta[name="description"]')
+    .setAttribute("content", desc);
 }
