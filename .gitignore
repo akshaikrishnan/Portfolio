@@ -3,3 +3,4 @@
 *.sass.map
 *.scss.map
 .firebase/hosting..cache
+*.cache
