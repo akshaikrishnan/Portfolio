@@ -370,30 +370,35 @@
   /**
    * Option Style Pages
    */
+
+  $(document).ready(function () {
+    let darkMode = localStorage.getItem("dark-mode");
+    const prefersLightMode = window.matchMedia(
+      "(prefers-color-scheme: light)"
+    ).matches;
+    // const userPreference = localStorage.getItem("dark-mode");
+    // console.log(darkMode, prefersLightMode);
+    if (prefersLightMode) {
+      const _dark = $(".v-dark");
+      _dark.removeClass("v-dark").addClass("v-light");
+      console.log("prefersLightMode");
+    }
+    if (darkMode == "disabled") {
+      const _dark = $(".v-dark");
+      _dark.removeClass("v-dark").addClass("v-light");
+      console.log("darkmode==disabled");
+    }
+    if (darkMode == "enabled") {
+      const _light = $(".v-light");
+      _light.addClass("v-dark").removeClass("v-light");
+      console.log("darkmode==enabled");
+    }
+  });
   function changeStyle() {
     const options = $(".box-options");
     options.find(".title-mode").each(function () {
       dsnGrid.convertTextLine(this);
     });
-    let darkMode = localStorage.getItem("dark-mode");
-    if (
-      (window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: light)").matches) ||
-      darkMode === "disabled"
-    ) {
-      const _dark = $(".v-dark");
-      $body.toggleClass("v-dark");
-      _dark.removeClass("v-dark").addClass("v-light");
-    }
-    if (
-      (window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches) ||
-      darkMode === "enabled"
-    ) {
-      const _light = $(".v-light");
-      $body.toggleClass("v-dark");
-      _light.addClass("v-dark").removeClass("v-light");
-    }
 
     options.find(".day-night").on("click", function () {
       const _dark = $(".v-dark");
