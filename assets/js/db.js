@@ -170,6 +170,7 @@ async function createPost(data) {
   $("#category").text(data.category);
   $("#postTitle").text(data.title);
   $("#cover").attr({ "data-dsn-src": data.cover, src: data.cover });
+  $("#post-content").html(data.content);
   metaGenerator(data.title, data.summary, data.cover);
 }
 

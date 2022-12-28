@@ -1384,7 +1384,7 @@
         });
         if (parallaxIt1) $scene.push(parallaxIt1);
 
-        if (dsnGrid.isMobile()) return;
+        // if (dsnGrid.isMobile()) return;
 
         parallaxIt1.on("progress", function ($s) {
           _img.css({
